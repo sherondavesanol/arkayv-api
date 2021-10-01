@@ -13,8 +13,7 @@ const checkWishlistItems = (data) => {
 
             const wishlist = data.wishlist;
 
-            const isAlreadyAdded = 
-                wishlist.some(wishlistItem => wishlistItem.productId === productId);
+            const isAlreadyAdded = wishlist.some(wishlistItem => wishlistItem.productId === productId);
 
             return isAlreadyAdded;
         })

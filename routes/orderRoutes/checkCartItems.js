@@ -12,7 +12,7 @@ router.post('/', auth.verify, (req, res) => {
 
     const data = {
         userId: auth.decode(req.headers.authorization).payload.id,
-        courseId: req.body.courseId
+        productId: req.body.productId
     };
 
     checkCartItems(data).then(data => res.send(data));

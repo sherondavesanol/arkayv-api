@@ -13,8 +13,7 @@ const checkCartItems = (data) => {
 
             const cart = data.cart;
 
-            const isAlreadyAdded = 
-                cart.some(cartItem => cartItem.productId === productId);
+            const isAlreadyAdded = cart.some(cartItem => cartItem.productId === productId);
 
             return isAlreadyAdded;
         })
