@@ -23,7 +23,7 @@ app.use(cors());
 app.use('/uploads', express.static('uploads'));
 
 // Database
-mongoose.connect('mongodb+srv://sdssanol:Haosh0ku1996!@cluster0.vz2y1.mongodb.net/arkayv?retryWrites=true&w=majority',
+mongoose.connect(process.env.DATABASE_URL,
     {
         useNewURLParser: true,
         useUnifiedTopology: true
